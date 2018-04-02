@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B0260F7-5D0B-4A28-ABC8-34A69FF09068}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Punto_de_Venta_Facil.My.MyApplication</StartupObject>
+    <RootNamespace>Punto_de_Venta_Facil</RootNamespace>
+    <AssemblyName>Punto_de_Venta_Facil</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>51</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Punto_de_Venta_Facil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Punto_de_Venta_Facil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3E09979D319C8C12CF4A7402FB5BD8474661E8C5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Punto_Venta_Facil_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balance_General.designer.vb">
+      <DependentUpon>Balance_General.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Balance_General.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busca_Clientes.Designer.vb">
+      <DependentUpon>Busca_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Busca_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CobrosFacturas.Designer.vb">
+      <DependentUpon>CobrosFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CobrosFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.vb">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle_Compra.Designer.vb">
+      <DependentUpon>Detalle_Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle_Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalle_Producto.Designer.vb">
+      <DependentUpon>Detalle_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Cuenta.designer.vb">
+      <DependentUpon>Estado_Cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estado_Resultados.designer.vb">
+      <DependentUpon>Estado_Resultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estado_Resultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gasto.designer.vb">
+      <DependentUpon>Gasto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gasto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoja_Ruta.designer.vb">
+      <DependentUpon>Hoja_Ruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hoja_Ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro_Balance_Saldos.designer.vb">
+      <DependentUpon>Libro_Balance_Saldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libro_Balance_Saldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro_Diario.designer.vb">
+      <DependentUpon>Libro_Diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libro_Diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro_Mayor.designer.vb">
+      <DependentUpon>Libro_Mayor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libro_Mayor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_Transporte.Designer.vb">
+      <DependentUpon>Control_Transporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Control_Transporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Municipio.Designer.vb">
+      <DependentUpon>Mantenimiento_Municipio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Municipio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Provincia.Designer.vb">
+      <DependentUpon>Mantenimiento_Provincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Provincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Transporte.Designer.vb">
+      <DependentUpon>Mantenimiento_Transporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Transporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientoBancoEgreso.designer.vb">
+      <DependentUpon>MovimientoBancoEgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoBancoEgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientoBancoIngreso.designer.vb">
+      <DependentUpon>MovimientoBancoIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoBancoIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nomenclatura_Saldos.Designer.vb">
+      <DependentUpon>Nomenclatura_Saldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nomenclatura_Saldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagosFacturas.Designer.vb">
+      <DependentUpon>PagosFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagosFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartidaEditada.designer.vb">
+      <DependentUpon>PartidaEditada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartidaEditada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventario.designer.vb">
+      <DependentUpon>inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kardex.designer.vb">
+      <DependentUpon>kardex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kardex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro_Compras.designer.vb">
+      <DependentUpon>Libro_Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libro_Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro_Ventas.designer.vb">
+      <DependentUpon>Libro_Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Libro_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Bancos.designer.vb">
+      <DependentUpon>Mantenimiento_Bancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Categoria.Designer.vb">
+      <DependentUpon>Mantenimiento_Categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Nomenclatura.Designer.vb">
+      <DependentUpon>Mantenimiento_Nomenclatura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Nomenclatura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientoBanco.designer.vb">
+      <DependentUpon>MovimientoBanco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoBanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Productos.Designer.vb">
+      <DependentUpon>Mantenimiento_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Proveedores.Designer.vb">
+      <DependentUpon>Mantenimiento_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Ruta.Designer.vb">
+      <DependentUpon>Mantenimiento_Ruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Sucursal.Designer.vb">
+      <DependentUpon>Mantenimiento_Sucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Sucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Cobros.Designer.vb">
+      <DependentUpon>Cobros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cobros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos.Designer.vb">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelExtended.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Partida.designer.vb">
+      <DependentUpon>Partida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Partida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partida_Detalle.designer.vb">
+      <DependentUpon>Partida_Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Partida_Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partida_Detalle_Editada.designer.vb">
+      <DependentUpon>Partida_Detalle_Editada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Partida_Detalle_Editada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factura.Designer.vb">
+      <DependentUpon>factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalContador.Designer.vb">
+      <DependentUpon>PrincipalContador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalContador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Balance_General.resx">
+      <DependentUpon>Balance_General.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busca_Clientes.resx">
+      <DependentUpon>Busca_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CobrosFacturas.resx">
+      <DependentUpon>CobrosFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_Compra.resx">
+      <DependentUpon>Detalle_Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalle_Producto.resx">
+      <DependentUpon>Detalle_Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Cuenta.resx">
+      <DependentUpon>Estado_Cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estado_Resultados.resx">
+      <DependentUpon>Estado_Resultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gasto.resx">
+      <DependentUpon>Gasto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoja_Ruta.resx">
+      <DependentUpon>Hoja_Ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventario.resx">
+      <DependentUpon>inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kardex.resx">
+      <DependentUpon>kardex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_Balance_Saldos.resx">
+      <DependentUpon>Libro_Balance_Saldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_Compras.resx">
+      <DependentUpon>Libro_Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_Diario.resx">
+      <DependentUpon>Libro_Diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_Mayor.resx">
+      <DependentUpon>Libro_Mayor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro_Ventas.resx">
+      <DependentUpon>Libro_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Bancos.resx">
+      <DependentUpon>Mantenimiento_Bancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Categoria.resx">
+      <DependentUpon>Mantenimiento_Categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Transporte.resx">
+      <DependentUpon>Control_Transporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Municipio.resx">
+      <DependentUpon>Mantenimiento_Municipio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Nomenclatura.resx">
+      <DependentUpon>Mantenimiento_Nomenclatura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Productos.resx">
+      <DependentUpon>Mantenimiento_Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Proveedores.resx">
+      <DependentUpon>Mantenimiento_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Provincia.resx">
+      <DependentUpon>Mantenimiento_Provincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Ruta.resx">
+      <DependentUpon>Mantenimiento_Ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Sucursal.resx">
+      <DependentUpon>Mantenimiento_Sucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Transporte.resx">
+      <DependentUpon>Mantenimiento_Transporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientoBanco.resx">
+      <DependentUpon>MovimientoBanco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientoBancoEgreso.resx">
+      <DependentUpon>MovimientoBancoEgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientoBancoIngreso.resx">
+      <DependentUpon>MovimientoBancoIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobros.resx">
+      <DependentUpon>Cobros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nomenclatura_Saldos.resx">
+      <DependentUpon>Nomenclatura_Saldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos.resx">
+      <DependentUpon>Pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagosFacturas.resx">
+      <DependentUpon>PagosFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partida.resx">
+      <DependentUpon>Partida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartidaEditada.resx">
+      <DependentUpon>PartidaEditada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partida_Detalle.resx">
+      <DependentUpon>Partida_Detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partida_Detalle_Editada.resx">
+      <DependentUpon>Partida_Detalle_Editada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factura.resx">
+      <DependentUpon>factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalContador.resx">
+      <DependentUpon>PrincipalContador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Punto_Venta_Facil_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.vbproj">
+      <Project>{F4FAB6AF-591E-49AF-9E78-44B47C4F9E2C}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.vbproj">
+      <Project>{EA101276-C9C3-4CE0-A9D4-BF5943DC170D}</Project>
+      <Name>Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.vbproj">
+      <Project>{BF7600B4-8E92-4CB1-BF84-08F46ABA2D81}</Project>
+      <Name>Capa_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
