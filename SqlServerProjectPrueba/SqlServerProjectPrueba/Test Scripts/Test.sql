@@ -32,4 +32,4 @@
 -- select dbo.AggregateName(Column1) from Table1
 
 
-select id, Nombre, Apellido, Direccion, Telefono from empleado
+select id, Nombre, Apellido, Direccion, Telefono from enpleado
